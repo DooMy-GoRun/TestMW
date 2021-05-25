@@ -7,6 +7,56 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="0">
+            <TabItem Name="StaffTab">
+                <TabItem.Header>
+                    <TextBlock Text ="Staff"/>
+                </TabItem.Header>
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header ="SurName"/>
+                            <GridViewColumn Header ="Name"/>
+                            <GridViewColumn Header ="MiddleName"/>
+                            <GridViewColumn Header ="DateOfBirth"/>
+                            <GridViewColumn Header ="Gender"/>
+                            <GridViewColumn Header ="Department"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem Name="DepartmentTab">
+                <TabItem.Header>
+                    <TextBlock Text ="Department"/>
+                </TabItem.Header>
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header ="Title"/>
+                            <GridViewColumn Header ="Head"/>                            
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem Name="OrderTab">
+                <TabItem.Header>
+                    <TextBlock Text ="Order"/>
+                </TabItem.Header>
+                <ListView>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header ="Number"/>
+                            <GridViewColumn Header ="NameOfCounterparty"/>
+                            <GridViewColumn Header ="OrderDate"/>
+                            <GridViewColumn Header ="Author"/>                            
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
