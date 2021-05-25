@@ -8,6 +8,7 @@ namespace TestMWCApp.Model
 {
     public class Department
     {
-        
+        public string Title { get; set; }
+        public virtual Staff Staffs { get; set; }
     }
 }
