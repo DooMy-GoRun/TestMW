@@ -14,49 +14,52 @@
         <TabControl Grid.Row="0">
             <TabItem Name="StaffTab">
                 <TabItem.Header>
-                    <TextBlock Text ="Staff"/>
+                    <TextBlock Text ="Сотрудники"/>
                 </TabItem.Header>
                 <ListView>
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header ="SurName"/>
-                            <GridViewColumn Header ="Name"/>
-                            <GridViewColumn Header ="MiddleName"/>
-                            <GridViewColumn Header ="DateOfBirth"/>
-                            <GridViewColumn Header ="Gender"/>
-                            <GridViewColumn Header ="Department"/>
+                            <GridViewColumn Header ="Фамилия"/>
+                            <GridViewColumn Header ="Имя"/>
+                            <GridViewColumn Header ="Отчество"/>
+                            <GridViewColumn Header ="Дата рождения"/>
+                            <GridViewColumn Header ="Пол"/>
+                            <GridViewColumn Header ="Подразделение"/>
                         </GridView>
                     </ListView.View>
                 </ListView>
             </TabItem>
             <TabItem Name="DepartmentTab">
                 <TabItem.Header>
-                    <TextBlock Text ="Department"/>
+                    <TextBlock Text ="Подразделения"/>
                 </TabItem.Header>
                 <ListView>
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header ="Title"/>
-                            <GridViewColumn Header ="Head"/>                            
+                            <GridViewColumn Header ="Название"/>
+                            <GridViewColumn Header ="Руководитель"/>
                         </GridView>
                     </ListView.View>
                 </ListView>
             </TabItem>
             <TabItem Name="OrderTab">
                 <TabItem.Header>
-                    <TextBlock Text ="Order"/>
+                    <TextBlock Text ="Заказы"/>
                 </TabItem.Header>
                 <ListView>
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header ="Number"/>
-                            <GridViewColumn Header ="NameOfCounterparty"/>
-                            <GridViewColumn Header ="OrderDate"/>
-                            <GridViewColumn Header ="Author"/>                            
+                            <GridViewColumn Header ="Номер"/>
+                            <GridViewColumn Header ="Название контрагента"/>
+                            <GridViewColumn Header ="Дата заказа"/>
+                            <GridViewColumn Header ="Автор"/>
                         </GridView>
                     </ListView.View>
                 </ListView>
             </TabItem>
         </TabControl>
+        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="230,5,0,0" Grid.Row="1" VerticalAlignment="Top" Height="35" Width="100"/>
+        <Button x:Name="EditButton" Content="Редактировать" HorizontalAlignment="Left" Margin="45,5,0,0" Grid.Row="1" VerticalAlignment="Top" Height="35" Width="100"/>
+        <Button x:Name="DeleteButton" Content="Удалить" HorizontalAlignment="Left" Margin="430,5,0,0" Grid.Row="1" VerticalAlignment="Top" Height="35" Width="100" RenderTransformOrigin="1.3,0.571"/>
     </Grid>
 </Window>
