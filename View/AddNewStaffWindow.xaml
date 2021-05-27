@@ -1,0 +1,32 @@
+﻿<Window x:Class="TestMWCApp.View.AddNewStaffWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestMWCApp.View"
+        mc:Ignorable="d"
+        Title="AddNewStaffWindow" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <TextBlock Text="Фамилия"/>
+            <TextBox Text=""/>
+            <TextBlock Text="Имя"/>
+            <TextBox Text=""/>
+            <TextBlock Text="Отчество"/>
+            <TextBox Text=""/>
+            <TextBlock Text="Дата рождения"/>
+            <TextBox Text=""/>
+            <TextBlock Text="Пол"/>
+            <ComboBox/>
+            <TextBlock Text="Подразделение"/>
+            <ComboBox/>
+        </StackPanel>
+        <Button Grid.Row="1" Content="Добавить сотрудника"/>
+    </Grid>
+</Window>
