@@ -11,6 +11,6 @@ namespace TestMWCApp.Model
         public int Nubmer { get; set; }
         public string NameOfCounterparty { get; set; }
         public DateTime OrderDate { get; set; }
-        public virtual Staff Staffs { get; set; }
+        public List<Staff> Staffs { get; set; }
     }
 }

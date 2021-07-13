@@ -15,7 +15,7 @@ namespace TestMWCApp.Model.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=TestMWCappDB;Trust_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=TestMWCAppDB;Trusted_Connection=True;");
         }
     }
 }
